@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- titulo da pesquisa -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:text="Em quem você votaria para prefeito?"
+            android:textColor="#FF9800"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- scrollView contendo os candidatos -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RadioGroup
+                android:id="@+id/radioGroupCandidatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Candidato 1 -->
+
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    app:srcCompat="@drawable/perpetua"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="100dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbCandidato1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF9800"
+                    android:text="Perpetua"
+                    android:layout_marginStart="100dp"/>
+
+
+                <!-- Candidato 2 -->
+
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    app:srcCompat="@drawable/reidogado"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="100dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbCandidato2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rei do Gado"
+                    android:textColor="#FF9800"
+                    android:layout_marginStart="100dp"/>
+
+
+
+                <!-- Candidato 3 -->
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    app:srcCompat="@drawable/nazare"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="100dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbCandidato3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nazare tedesco"
+                    android:textColor="#FF9800"
+                    android:layout_marginStart="100dp"/>
+
+
+
+                <!-- Candidato 4 -->
+
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    app:srcCompat="@drawable/carminha"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="100dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbCandidato4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carminha"
+                    android:textColor="#FF9800"
+                    android:layout_marginStart="100dp"/>
+
+
+
+                <!-- Candidato 5 -->
+
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    app:srcCompat="@drawable/barnco"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="100dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbCandidato5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Voto Branco"
+                    android:textColor="#FF9800"
+                    android:layout_marginStart="100dp"/>
+
+
+
+                <!-- Candidato 6 -->
+
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    app:srcCompat="@drawable/nulo"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="100dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbCandidato6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voto Nulo"
+                    android:textColor="#FF9800"
+                    android:layout_marginStart="100dp"/>
+
+
+                <!-- Candidato 7 -->
+
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    app:srcCompat="@drawable/idk"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="100dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbCandidato7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nao sabe"
+                    android:textColor="#FF9800"
+                    android:layout_marginStart="100dp"/>
+
+            </RadioGroup>
+        </ScrollView>
+
+        <!-- botao de prosseguir -->
+        <Button
+            android:id="@+id/btnAvancar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF9800"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:text="Prosseguir" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
