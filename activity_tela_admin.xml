@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".telaAdmin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieProblemas"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="16dp"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieEstimulada"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="16dp"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieEspontanea"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnVoltarLogin"
+            style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Tertiary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voltar ao Login"
+            android:backgroundTint="#FF9800"
+            android:textColor="@color/black"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>
